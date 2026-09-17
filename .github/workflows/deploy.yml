@@ -5,7 +5,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
+      - name: Code clone
+        run: actions/checkout@v7
+
+      - name: Deploy the code via nginx
+        run: cp index.html /var/www/html
+
+        
       - name: Build the code
-        run: echo "Code built using xxxxx"
+        run: echo "Code built using AWS EC2 instance"
