@@ -2,6 +2,9 @@ name : CICD Pipeline
 
 on:
   push:
+
+
+  
 jobs:
   code:
     uses: ./.github/workflows/code.yml  #this is how workflow is called 
