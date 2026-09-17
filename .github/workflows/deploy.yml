@@ -8,7 +8,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Code clone
-        run: actions/checkout@v7
+        uses: actions/checkout@v7
 
       - name: Deploy the code via nginx
         run: cp index.html /var/www/html
