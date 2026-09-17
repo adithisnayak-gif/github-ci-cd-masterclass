@@ -1,0 +1,11 @@
+name : Deploy
+
+on:
+  workflow_call: #whenever we need the WF to be called from another WF
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build the code
+        run: echo "Code built using xxxxx"
